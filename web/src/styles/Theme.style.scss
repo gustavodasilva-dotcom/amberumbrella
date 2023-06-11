@@ -1,0 +1,65 @@
+@import './Themes/breakpoints';
+@import './Themes/variables';
+
+.App {
+  display: grid;
+  place-items: center;
+  height: 100vh;
+  background: $dark-green;
+
+  .title {
+    text-align: center;
+    background: $teal-blue;
+    padding: 20px;
+    font-size: 30px;
+    font-weight: 700;
+    color: $white;
+  }
+
+  .wrapper {
+    background: $white;
+  }
+
+  form {
+    padding: 30px;
+  }
+
+  .row {
+    margin-bottom: 10px;
+    height: 47px;
+
+    input,
+    button {
+      width: 100%;
+    }
+
+    input {
+      padding: 10px 2px 10px 10px;
+    }
+
+    button {
+      padding: 15px 0 15px 0;
+      font-size: 18px;
+      font-weight: 300;
+      color: $white;
+      border: none;
+      background: $light-orange;
+      border-radius: 10px;
+    }
+  }
+
+  .options {
+    .option {
+      margin-top: 20px;
+
+      a {
+        text-decoration: none;
+        color: $dark-green;
+      }
+
+      .sign-up {
+        margin: 5px
+      }
+    }
+  }
+}
